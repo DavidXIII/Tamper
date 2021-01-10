@@ -1,0 +1,23 @@
+.description {
+    background-color: #fff;
+
+    .container {
+        display: flex;
+        margin: 100px 250px;
+        align-items: center;
+    }
+    div>p{
+        color:$text_collor;
+
+    }
+h2{
+    color:$siren_collor;
+    padding-bottom: 26px;
+}
+    .description__left {
+        
+        padding-right: 162px;
+    }
+    
+    
+}

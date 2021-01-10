@@ -20,21 +20,47 @@ body {
   background: linear-gradient(90deg, #7F2F4A 10.63%, #384C85 88.13%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   padding: 57px 0px; }
   .header .container {
+    margin-left: 250px;
+    margin-right: 250px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; }
-  .header .container-menu {
+    justify-content: space-between;
+    border-bottom: 1px solid #fff; }
+  .header .header__menu {
     padding-bottom: 64px; }
   .header ul {
     display: flex;
-    padding-bottom: 70px; }
+    padding-bottom: 70px;
+    align-items: center; }
   .header li {
     padding-right: 69px;
     list-style-type: none;
     text-transform: uppercase; }
   .header a {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    padding-bottom: 21px; }
+  .header .border {
+    border-bottom: solid 0.5px #fff; }
+  .header h2 {
+    padding: 40.22px;
+    color: #fff;
+    font: "Abel", sans-serif;
+    margin-left: 250px; }
+
+.description {
+  background-color: #fff; }
+  .description .container {
+    display: flex;
+    margin: 100px 250px;
+    align-items: center; }
+  .description div > p {
+    color: #384C85; }
+  .description h2 {
+    color: #551A8B;
+    padding-bottom: 26px; }
+  .description .description__left {
+    padding-right: 162px; }
 
 /*# sourceMappingURL=style.css.map */
