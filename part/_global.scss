@@ -11,14 +11,19 @@ body {
         family:$font;
         size: 24px;
     }
+    .header, .content, .description {
+        height:18%;
+    }
+    .footer {
+        height:15%;
+    }
 
 .container {
     max-width: 1200px;
     width: 65%;
     margin: 0% auto;
+    
 }
 
-text: {
-    decoration:none;
-}
+
 }

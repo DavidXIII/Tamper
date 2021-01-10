@@ -1,0 +1,39 @@
+.header {
+    background: linear-gradient(90deg, #7F2F4A 10.63%, #384C85 88.13%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    
+
+padding: 57px 0px;
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-menu{
+        padding-bottom: 64px;
+    }
+       
+   
+    
+    ul { 
+        display: flex;
+        padding-bottom: 70px;
+
+    }
+
+    li {
+        padding-right: 69px;
+        list-style-type: none;
+        text-transform: uppercase;
+        
+
+    }
+    
+    a {
+        text-decoration: none;
+        color:$white_collor;
+    }
+
+   
+}
