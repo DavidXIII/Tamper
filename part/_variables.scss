@@ -1,5 +1,31 @@
-$white_collor: #fff;
-$siren_collor:#551A8B;
-$text_collor:#384C85;
+$white_color: #fff;
+$siren_color:#551A8B;
+$text_color:#384C85;
 
-$font: "Abel" ,sans-serif ;
+$font: "Abel",
+sans-serif;
+
+%section {
+    min-height: 512px;
+    padding: 100px 0px;
+}
+
+%flexible{
+    display:flex;
+    flex-direction: row;
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px ) {
+        @content;
+    }
+}
+
+
+
+@mixin phone {
+    @media screen and (max-width:520px )
+    {
+        @content;
+    }
+}

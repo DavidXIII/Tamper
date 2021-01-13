@@ -6,24 +6,28 @@
     padding: 0px;
 }
 
+html,
 body {
-    font:{
-        family:$font;
-        size: 24px;
-    }
-    .header, .content, .description {
-        height:18%;
-    }
-    .footer {
-        height:15%;
-    }
-
-.container {
-    max-width: 1200px;
-    width: 65%;
-    margin: 0% auto;
-    
+    height: 100%;
 }
 
+a {
+    color: $white_color;
+    text-decoration: none;
+}
+
+body {
+    font: {
+        family: $font;
+        size: 24px;
+    }
+
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 940px;
+    width: 95%;
+    margin: 0 auto;
 
 }

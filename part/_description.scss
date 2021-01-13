@@ -1,23 +1,18 @@
 .description {
-    background-color: #fff;
-
-    .container {
-        display: flex;
-        margin: 100px 250px;
-        align-items: center;
+    @extend %section;
+    .container{
+        @extend %flexible;
+        flex-basis:1px bold ;
     }
-    div>p{
-        color:$text_collor;
-
-    }
-h2{
-    color:$siren_collor;
-    padding-bottom: 26px;
-}
-    .description__left {
-        
-        padding-right: 162px;
+    &__left{
+       
     }
     
-    
+    h2{
+        color: $siren_color;
+    }
+    p {
+        color:$text_color;
+    }
+
 }

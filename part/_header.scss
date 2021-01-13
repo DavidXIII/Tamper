@@ -1,61 +1,84 @@
 .header {
-    
-    
+    @extend %section;
+    padding: 50px 0;
     background: linear-gradient(90deg, #7F2F4A 10.63%, #384C85 88.13%),
         linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    color: $white_color;
 
-
-    padding: 57px 0px;
-
-    .container {
-        margin-left: 250px;
-        margin-right: 250px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:space-between;
-        border-bottom: 1px solid #fff;
+    @include tablet {
+        min-height: 100%;
+        text-align: center;
     }
 
-    .header__menu {
-        padding-bottom: 64px;
+    &__top {
+        @extend %flexible;
+        justify-content: space-between;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 50px;
+
+        @include tablet {
+            flex-direction: column;
+            border-bottom: 0;
+        }
+    }
+
+    &__logo {
+        @include tablet {
+            border-bottom: 1px solid #FFFFFF;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__menu {}
+
+    &__tittle {
+        letter-spacing: 0.1em;
+        padding: 50px 0;
+        line-height: 1.75em;
     }
 
 
 
-    ul {
-        display: flex;
-        padding-bottom: 70px;
-        align-items: center;
 
-    }
+}
 
-    li {
-        padding-right: 69px;
+.menu {
+    &__items {
+        @extend %flexible;
         list-style-type: none;
+
+        @include tablet {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        @include tablet {
+            margin: 0 35px;
+        }
+
+        font: {
+            size: 16px;
+
+
+        }
+
         text-transform: uppercase;
+        margin-left:75px;
 
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid $white_color;
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+
+        }
 
     }
-
-    a {
-        text-decoration: none;
-        color: $white_collor;
-        padding-bottom: 21px;
-    }
-
-    .border {
-        border-bottom: solid 0.5px #fff;
-    }
-    
-    h2 {
-        // text-align: center;
-        padding: 40.22px;
-        color: $white_collor;
-        font:$font;
-        margin-left: 250px;
-    }
-    
-
-
 }
