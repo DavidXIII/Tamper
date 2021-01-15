@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
-.header, .description {
+.header, .content, .description {
   min-height: 512px;
   padding: 100px 0px; }
 
@@ -77,8 +77,29 @@ body {
   .menu__item:hover::after {
     transform: scaleX(1); }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+
+.content1 {
+  background-image: url(/app/images/mobi.jpg);
+  background-repeat: no-repeat; }
+
+.content2 {
+  background-image: url(/app/images/mobi\ 2.jpg);
+  max-height: 512px; }
+
 .description .container {
-  flex-basis: 1px bold; }
+  justify-content: space-between; }
+.description__left {
+  flex-basis: 40%; }
+.description__right {
+  flex-basis: 40%; }
 .description h2 {
   color: #551A8B; }
 .description p {

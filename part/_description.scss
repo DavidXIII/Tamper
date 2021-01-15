@@ -2,10 +2,13 @@
     @extend %section;
     .container{
         @extend %flexible;
-        flex-basis:1px bold ;
+        justify-content: space-between;
     }
     &__left{
-       
+        flex-basis:40%;
+    }
+    &__right{
+        flex-basis:40%;
     }
     
     h2{
