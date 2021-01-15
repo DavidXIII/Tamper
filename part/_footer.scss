@@ -1,0 +1,31 @@
+.footer {
+    background-color: #384C85;
+    min-height: 240px;
+    .container {
+        @extend %flexible;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include tablet{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    @extend %section;
+
+    color:$white_color;
+
+    a{
+        text-transform: uppercase;
+        margin:10px 30px;
+        display: block;
+        border: 1px solid #fff;
+        border-radius: 3px;
+
+    }
+
+    
+    
+
+}

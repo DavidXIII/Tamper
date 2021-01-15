@@ -3,28 +3,44 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
+   
+
 
 
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        
-       
+        @extend %flexible;
+        justify-content: flex-end;
+
+        @include tablet{
+            justify-content: center;
+           
+        }
+        @include phone {
+            display: block;
+        }
+
     }
 
-  
+&__right{
+    flex-basis: 40%;
+    color:$white_color;
+    
+        
+   
+}
+
 
 }
 
 .content1 {
-    background-image: url(/app/images/mobi.jpg);
-    background-repeat: no-repeat;
+    @include backimage('/app/images/mobi.jpg');
+    
 }
 
 .content2 {
-    background-image: url(/app/images/mobi\ 2.jpg);
-    max-height: 512px;
-    
+
+    @include backimage('/app/images/mobi2.jpg');
+    @include phone {
+        display: none;
+    }
 }

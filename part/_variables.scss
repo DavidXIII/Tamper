@@ -10,13 +10,25 @@ sans-serif;
     padding: 100px 0px;
 }
 
-%flexible{
-    display:flex;
+%flexible {
+    display: flex;
     flex-direction: row;
 }
 
+@mixin backimage($bg) {
+
+    background: {
+        image:url($bg);
+        repeat: no-repeat;
+        position: center top;
+        size: cover;
+
+    }
+
+}
+
 @mixin tablet {
-    @media screen and (max-width: 768px ) {
+    @media screen and (max-width: 768px) {
         @content;
     }
 }
@@ -24,8 +36,7 @@ sans-serif;
 
 
 @mixin phone {
-    @media screen and (max-width:520px )
-    {
+    @media screen and (max-width:520px) {
         @content;
     }
 }
